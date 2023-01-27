@@ -2,27 +2,81 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>This worked!</title>
+    <link rel="shortcut icon" href ="img/camera_image.png" />
+    <title>My Website Title is Original</title>
+
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
-    
+
 </head>
 <body>
-    <h1>Welcome to this website :)</h1>
-    <img src="img/IMG_9929.jpg" />
-    <p>This will be the paragraph that I have to write about myself....</p>
+    <h1>Spencer Free</h1>
+    <img src="img/IMG_9929.jpg" width="200" height="300" />
+    <p>In IS 413 this semester, I hope to be comfortable building websites in C#. I really want to land a web development internship for the summer as well as build my own website for my personal photography business after the semester is over.</p>
 
+    <ul>
+        <li>Job #1 : Web Developer</li>
+        <li>Job #2 : Data Analyst</li>
+        <li>Job #3 : Software Engineering</li>
+    </ul>
 
-    <h2>Do I need another Title?</h2>
+    <h2>Grade Calculator</h2>
     <form>
-        <label>From: </label>
+        <label>Assignments Grade(%): </label>
         <input id="txtfrom" /><br />
         <label>Subject:</label>
         <input id="txtsubject" /><br />
         <label>Message: </label>
-        <textarea id= "txtmessage"rows="4"></textarea><br />
+        <textarea id="txtmessage" rows="4"></textarea><br />
         <input id='btnsend' type="button" value="Send Message" />
+        <output id='myText'></output>
+        <!--Assignments 50 %
+        Group Project 10 %
+        Quizzes 10 %
+        Midterm Exam 10 %
+        Final Exam 10 %
+        INTEX 10 %-->
+        <!--
+            Total >= 94% ... A
+            90% <= Total < 94% ... A-
+            87% <= Total < 90% ... B+
+            84% <= Total < 87% ... B
+            80% <= Total < 84% ... B-
+            77% <= Total < 80% ... C+
+            74% <= Total < 77% ... C
+            70% <= Total < 74% ... C-
+            67% <= Total < 70% ... D+
+            64% <= Total < 67% ... D
+            60% <= Total < 64% ... D-
+            Total < 60% ... E
+        -->
     </form>
+    <script type="text/javascript">
+        $("#btnsend").click(function () {
+            $('#InputText').keyup(function () {
+                $('#OutputText').val($(this).val());
+            });
+        });
+    </script>
+    <div id="JQDiv">
+        <form id="JQForm" action="">
+            <p>
+                <label for="InputText">
+                    Enter Name :
+                </label><br />
+                <input id="InputText" type="text" name="inputBox" />
+            </p>
+
+            <p>
+                <label for="OutputText">
+                    Output in box
+                </label><br />
+
+                <input id="OutputText" type="text" name="outputBox" readonly="readonly" />
+            </p>
+        </form>
+    </div>
+    <a href="#" id="lnkPrint">Back to Top</a>
 
     <script src="lib/bootstrap/js/bootstrap.js"></script>
     <script src="lib/JQuery/jquery-3.6.3.min.js"></script>
