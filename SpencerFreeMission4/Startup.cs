@@ -22,6 +22,7 @@ namespace SpencerFreeMission4
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
 
+            app.UseDefaultFiles();
             app.UseStaticFiles();
             /* if (env.IsDevelopment())
             {
