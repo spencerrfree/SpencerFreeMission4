@@ -2,58 +2,62 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href ="img/camera_image.png" />
+
+    <!--change icon picture to camera-->
+    <link rel="shortcut icon" href="img/camera_image.png" />
+
+    <!--webpage title-->
     <title>My Website Title is Original</title>
 
+    <!--import bootstrap and css files-->
     <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
 
 </head>
 <body>
+
+    <!--header with my preferred name-->
     <h1>Spencer Free</h1>
+
+    <!--Image of myself doing something I enjoy-->
     <img src="img/IMG_9929.jpg" />
+
+
+
+    <!--paragraph of what I hope to get out of this class-->
     <p>In IS 413 this semester, I hope to be comfortable building websites in C#. I really want to land a web development internship for the summer as well as build my own website for my personal photography business after the semester is over.</p>
 
+    <!--A list of the Top #3 jobs I am most interested in pursuing when I graduate-->
     <ul>
         <li>Job #1 : Web Developer</li>
         <li>Job #2 : Data Analyst</li>
         <li>Job #3 : Software Engineer</li>
     </ul>
 
+    <!--A "Grade Calculator" form that takes as input a percentage scored for each grade
+    category listed in the syllabus-->
     <h2>Grade Calculator</h2>
     <form>
-        <label>Subject:</label>
-        <input id="txtsubject" /><br />
-        <input id="btnSend" type="button" value="Send Message" /><br />
+        <label>Assignments Grade (%):</label>
+        <input id="assignments" type="number" /><br />
+        <label>Group Projects Grade (%):</label>
+        <input id="group" type="number" /><br />
+        <label>Quizzes Grade (%):</label>
+        <input id="quizzes" type="number" /><br />
+        <label>Midterm Exam Grade (%):</label>
+        <input id="midterm" type="number" /><br />
+        <label>Final Exam Grade (%):</label>
+        <input id="final" type="number" /><br />
+        <label>Intex Grade (%):</label>
+        <input id="intex" type="number" /><br />
+        <input id="btnSend" type="button" value="Calculate Final Grade (%)" /><br />
         <input id="output" name="output" />
     </form>
-    <!--<label>Output: </label>
-        -->
-    <!--Assignments 50 %
-    Group Project 10 %
-    Quizzes 10 %
-    Midterm Exam 10 %
-    Final Exam 10 %
-    INTEX 10 %-->
-    <!--
-        Total >= 94% ... A
-        90% <= Total < 94% ... A-
-        87% <= Total < 90% ... B+
-        84% <= Total < 87% ... B
-        80% <= Total < 84% ... B-
-        77% <= Total < 80% ... C+
-        74% <= Total < 77% ... C
-        70% <= Total < 74% ... C-
-        67% <= Total < 70% ... D+
-        64% <= Total < 67% ... D
-        60% <= Total < 64% ... D-
-        Total < 60% ... E
-    -->
-    <!---->
+    
 
-
-    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <!--Import Javascript file, Jquery, and Bootstrap template-->
     <script src="lib/JQuery/jquery-3.6.3.min.js"></script>
-    <script src="js/JavaScript.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/myFile.js"></script>
 </body>
 </html>
