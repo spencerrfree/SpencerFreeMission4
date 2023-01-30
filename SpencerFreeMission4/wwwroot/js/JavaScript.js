@@ -1,16 +1,9 @@
-﻿$("#btnsend").click(function () {
-    return("From: " + $("txtfrom").val() +
-        ", Subject: " + $("#txtsubject").val() +
-        ", Message: " + $("#txtmessage").val());
+﻿$("#btnSend").click(function () {
+    /*alert("This is my alert test" + $("#txtsubject").val());*/
+    var myString = "This is a test";
+    $("#output").val(myString);
 
 })
-
-$(document).ready(function () {
-    $('#lnkPrint').click(function () {
-        window.print();
-    });
-});
-
 
  /*< !--Assignments 50 %
         Group Project 10 %
