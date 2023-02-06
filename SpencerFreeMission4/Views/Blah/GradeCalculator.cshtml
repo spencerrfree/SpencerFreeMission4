@@ -2,23 +2,28 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "This is my Grade Calculator Title";
 }
+
+@model GradeCalculatorModel;
 <h2>Grade Calculator</h2>
-<form>
+<form method="post">
     <label>Assignments Grade (%):</label>
-    <input id="assignments" type="number" /><br />
+    <input id="assignments" type="number" asp-for="assignments" /><br />
     <label>Group Projects Grade (%):</label>
-    <input id="group" type="number" /><br />
+    <input id="group" type="number" asp-for="group" /><br />
     <label>Quizzes Grade (%):</label>
-    <input id="quizzes" type="number" /><br />
+    <input id="quizzes" type="number" asp-for="quizzes" /><br />
     <label>Midterm Exam Grade (%):</label>
-    <input id="midterm" type="number" /><br />
+    <input id="midterm" type="number" asp-for="midterm" /><br />
     <label>Final Exam Grade (%):</label>
-    <input id="final" type="number" /><br />
+    <input id="final" type="number" asp-for="final" /><br />
     <label>Intex Grade (%):</label>
-    <input id="intex" type="number" /><br />
-    <input id="btnSend" type="button" value="Calculate Final Grade (%)" /><br />
-    <input id="output" name="output" />
+    <input id="intex" type="number" asp-for="intex" /><br />
+    <input id="btnSend" type="submit" value="Calculate Final Grade (%)" /><br />
+    <input id="output" asp-for="output" />
+
+    <div asp-validation-summary="All"></div>
 </form>
 
 <script src="js/myFile.js"></script>

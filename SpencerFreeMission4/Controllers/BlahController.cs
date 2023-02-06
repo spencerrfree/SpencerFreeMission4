@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SpencerFreeMission4.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +16,14 @@ namespace SpencerFreeMission4.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult GradeCalculator()
         {
-
+            return View();
+        }
+        [HttpPost]
+        public IActionResult GradeCalculator(GradeCalculatorModel model)
+        {
             return View();
         }
     }
