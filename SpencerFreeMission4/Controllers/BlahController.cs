@@ -14,5 +14,11 @@ namespace SpencerFreeMission4.Controllers
             /*throw new IndexOutOfRangeException();*/
             return View();
         }
+
+        public IActionResult GradeCalculator()
+        {
+
+            return View();
+        }
     }
 }
